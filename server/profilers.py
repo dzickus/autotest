@@ -1,6 +1,9 @@
 import os, shutil, tempfile, logging
 
-import common
+try:
+    import autotest.common
+except ImportError:
+    import common
 from autotest_lib.client.common_lib import utils, error, profiler_manager
 from autotest_lib.server import profiler, autotest, standalone_profiler, hosts
 

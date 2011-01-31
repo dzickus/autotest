@@ -5,7 +5,10 @@
 import sys
 import unittest
 
-import common
+try:
+    import autotest.common
+except ImportError:
+    import common
 from autotest_lib.server import autoserv_parser
 
 

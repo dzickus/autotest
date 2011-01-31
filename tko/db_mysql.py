@@ -1,4 +1,7 @@
-import common
+try:
+    import autotest.common
+except ImportError:
+    import common
 import MySQLdb as driver
 import db
 
