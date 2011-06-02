@@ -64,9 +64,6 @@ class DroneUtility(object):
         if os.path.exists(temporary_directory):
             shutil.rmtree(temporary_directory)
         self._ensure_directory_exists(temporary_directory)
-        build_extern_cmd = os.path.join(results_dir,
-                                        '../utils/build_externals.py')
-        utils.run(build_extern_cmd)
 
 
     def _warn(self, warning):
