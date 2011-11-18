@@ -1038,7 +1038,7 @@ class base_job(object):
 
         # various server-specific directories
         if self.serverdir:
-            self._conmuxdir = readonly_dir(self.autodir, 'conmux')
+            self._conmuxdir = readonly_dir('/usr/share/conmux')
         else:
             self._conmuxdir = None
 
