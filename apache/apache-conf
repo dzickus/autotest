@@ -1,11 +1,11 @@
 NameVirtualHost *:80
 <VirtualHost *>
-    DocumentRoot /usr/local/autotest/apache/www/
+    DocumentRoot /var/www/autotest/
     <Directory />
         Options FollowSymLinks
         AllowOverride None
     </Directory>
-    <Directory /usr/local/autotest/apache/www/>
+    <Directory /var/www/autotest/>
         Options Indexes FollowSymLinks MultiViews
         AllowOverride None
         Order allow,deny

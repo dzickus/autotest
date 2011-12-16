@@ -150,7 +150,7 @@ class BaseAutotest(installable_object.InstallableObject):
         # The packages dir is used to store all the packages that
         # are fetched on that client. (for the tests,deps etc.
         # too apart from the client)
-        pkg_dir = os.path.join(autodir, 'packages')
+        pkg_dir = '/var/lib/autotest/packages'
         # clean up the autodir except for the packages directory
         host.run('cd %s && ls | grep -v "^packages$"'
                  ' | xargs rm -rf && rm -rf .[^.]*' % autodir)

@@ -158,7 +158,7 @@ class TestBaseAutotest(unittest.TestCase):
         pkgmgr = packages.PackageManager.expect_new('autodir',
             repo_urls=['repo'], hostname='hostname', do_locking=False,
             run_function=self.host.run, run_function_dargs=dict(timeout=600))
-        pkg_dir = os.path.join('autodir', 'packages')
+        pkg_dir = '/var/lib/autotest/packages'
         cmd = ('cd autodir && ls | grep -v "^packages$"'
                ' | xargs rm -rf && rm -rf .[^.]*')
         self.host.run.expect_call(cmd)

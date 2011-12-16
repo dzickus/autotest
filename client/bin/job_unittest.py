@@ -201,7 +201,7 @@ class test_base_job(unittest.TestCase):
         # other setup
         results = os.path.join(self.autodir, 'results')
         download = os.path.join(self.autodir, 'tests', 'download')
-        pkgdir = os.path.join(self.autodir, 'packages')
+        pkgdir = '/var/lib/autotest/packages'
 
         utils.drop_caches.expect_call()
         job_sysinfo = sysinfo.sysinfo.expect_new(resultdir)
