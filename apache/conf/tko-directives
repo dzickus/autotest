@@ -1,5 +1,5 @@
-Alias /results "/usr/local/autotest/results/"
-<Directory /usr/local/autotest/results/>
+Alias /results "/var/lib/autotest/results/"
+<Directory /var/lib/autotest/results/>
     Options Indexes FollowSymLinks MultiViews
     AllowOverride None
     Order allow,deny
