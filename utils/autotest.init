@@ -5,7 +5,6 @@
 #
 # update-rc.d autotest start 95 2 3 4 5 . stop 90 0 1 6 .
 
-BASE_DIR=/usr/local/autotest
 BECOME_USER=autotest
 
 if (test -r /lib/lsb/init-functions)
@@ -24,14 +23,14 @@ autotest_start() {
   log_daemon_msg "Starting monitor_db_babysitter"
   ( ulimit -v 2048000 ; \
     start-stop-daemon --start --quiet --chuid $BECOME_USER \
-      --background --exec $BASE_DIR/scheduler/monitor_db_babysitter )
+      --background --exec /usr/sbin/monitor_db_babysitter )
 }
 
 stop_daemon() {
   PID_NAME=$1
   DAEMON_NAME=$2
   log_daemon_msg "Stopping $DAEMON_NAME"
-  start-stop-daemon --stop --quiet --pidfile $BASE_DIR/$PID_NAME.pid
+  start-stop-daemon --stop --quiet --pidfile /var/run/autotest/$PID_NAME.pid
 }
 
 autotest_stop() {
