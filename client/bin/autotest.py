@@ -2,7 +2,7 @@ import os, sys
 from optparse import OptionParser
 try:
     import autotest.common as common
-    rootdir = os.path.abspath(os.path.dirname(autotest.common.__file__))
+    rootdir = os.path.abspath(os.path.dirname(common.__file__))
     autodir = os.path.join(rootdir, 'client')
     autodirbin = os.path.join(rootdir, 'client', 'bin')
 except ImportError:
