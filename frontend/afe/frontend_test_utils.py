@@ -1,6 +1,6 @@
 import atexit, datetime, os, tempfile, unittest
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend import setup_test_environment

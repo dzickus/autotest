@@ -6,7 +6,7 @@ Program to help setup kvm test environment
 """
 import os, sys, logging, shutil, glob
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import logging_manager

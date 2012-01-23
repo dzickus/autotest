@@ -10,7 +10,7 @@ is not present, functionality degrates gracefully.
 """
 import os, sys, optparse, logging, math, time
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import logging_config, logging_manager

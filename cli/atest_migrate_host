@@ -2,7 +2,7 @@
 # Copyright Google, Martin J. Bligh <mbligh@google.com>, Jan 2009
 import os, sys
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.server import frontend

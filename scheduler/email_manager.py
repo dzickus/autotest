@@ -1,6 +1,6 @@
 import traceback, socket, os, time, smtplib, re, sys, getpass, logging
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import global_config

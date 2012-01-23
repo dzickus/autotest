@@ -3,7 +3,7 @@
 import os, sys, optparse, fcntl, errno, traceback, socket
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import mail, pidfile

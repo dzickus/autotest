@@ -9,7 +9,7 @@ Step file creator/editor.
 
 import pygtk, gtk, os, glob, shutil, sys, logging
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import ppm_utils

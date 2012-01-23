@@ -2,7 +2,7 @@
 
 import unittest, os
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend import setup_django_environment

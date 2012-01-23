@@ -5,8 +5,10 @@ Run an control file using the remote engine.
 @copyright: 2007-2008 Martin J. Bligh <mbligh@google.com>, Google Inc.
 @license: GPL v2
 """
-
-import autoserv
+try:
+    import autotest.server.autoserv as autoserv
+except ImportError:
+    import autoserv
 
 if __name__ == '__main__':
     autoserv.main()

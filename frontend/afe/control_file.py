@@ -7,7 +7,7 @@ __author__ = 'showard@google.com (Steve Howard)'
 import re, os
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend.afe import model_logic

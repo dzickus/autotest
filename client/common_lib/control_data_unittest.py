@@ -2,7 +2,7 @@
 
 import os, sys, unittest
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import control_data, autotemp

@@ -2,7 +2,7 @@
 
 import os, sys, unittest, optparse
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.utils import parallel

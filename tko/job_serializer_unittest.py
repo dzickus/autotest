@@ -7,7 +7,7 @@ Mostly test if the serialized object has the expected content.
 """
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import datetime

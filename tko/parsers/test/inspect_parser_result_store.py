@@ -8,7 +8,7 @@ Define some helper functions as required.
 import optparse, os, sys
 from os import path
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.tko.parsers.test import scenario_base

@@ -2,7 +2,7 @@
 import os, sys, signal, time, subprocess, logging
 from optparse import OptionParser
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.scheduler import babysitter_logging_config

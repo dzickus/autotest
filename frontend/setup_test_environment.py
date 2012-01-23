@@ -2,7 +2,7 @@ import tempfile, shutil, os
 from django.core import management
 from django.conf import settings
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 

@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import unittest, os, socket, time, sys, struct
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import utils

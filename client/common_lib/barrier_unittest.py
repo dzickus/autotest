@@ -5,7 +5,7 @@ __author__ = """Ashwin Ganti (aganti@google.com)"""
 import os, sys, socket, errno, unittest, threading
 from time import time, sleep
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import error, base_barrier

@@ -2,7 +2,11 @@
 #
 # autotest <control file> - run the autotest control file specified.
 #
-import autotest
+try:
+    import autotest.common as common
+except ImportError:
+    import common
+from autotest_lib.client.bin import autotest
 
 if __name__ == '__main__':
     autotest.main()

@@ -1,6 +1,6 @@
 import itertools
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 

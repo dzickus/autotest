@@ -3,7 +3,7 @@
 import os, unittest, StringIO, socket, urllib2, shutil, subprocess, logging
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import base_utils, autotemp

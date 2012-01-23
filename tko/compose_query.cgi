@@ -13,7 +13,7 @@ import sys, os, urllib, cgi, cgitb, re, datetime, time
 total_wall_time_start = time.time()
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.tko import display, frontend, db, query_lib

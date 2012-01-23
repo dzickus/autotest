@@ -4,7 +4,7 @@
 
 import logging, os, pickle, re, sys
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.bin import setup_job as client_setup_job

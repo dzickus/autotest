@@ -3,7 +3,7 @@
 import os, sys, re, subprocess, tempfile
 from optparse import OptionParser
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import MySQLdb, MySQLdb.constants.ER

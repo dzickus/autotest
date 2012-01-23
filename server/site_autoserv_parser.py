@@ -1,7 +1,7 @@
 __author__ = "raphtee@google.com (Travis Miller)"
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.server.autoserv_parser import base_autoserv_parser

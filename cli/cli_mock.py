@@ -6,7 +6,7 @@
 import unittest, os, sys, StringIO
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.cli import atest, topic_common, rpc

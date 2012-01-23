@@ -3,7 +3,7 @@
 import cgi, cgitb
 import os, sys
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.tko import db, plotgraph, perf

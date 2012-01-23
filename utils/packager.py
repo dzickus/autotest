@@ -6,7 +6,7 @@ Utility to upload or remove the packages from the packages repository.
 
 import logging, os, sys, optparse, socket, tempfile, shutil
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import utils as client_utils

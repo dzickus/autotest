@@ -6,7 +6,7 @@ Autotest scheduler
 
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import datetime, errno, optparse, os, pwd, Queue, re, shutil, signal

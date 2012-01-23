@@ -5,7 +5,7 @@ from os import path
 import ConfigParser, os, shelve, shutil, sys, tarfile, time
 import difflib, itertools
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import utils, autotemp

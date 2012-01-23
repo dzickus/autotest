@@ -1,6 +1,6 @@
 #!/usr/bin/python
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import sys, os, shutil, errno, optparse, logging

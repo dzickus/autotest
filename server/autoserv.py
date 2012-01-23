@@ -5,7 +5,7 @@ Library for autotest-remote usage.
 import sys, os, re, traceback, signal, time, logging, getpass
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 

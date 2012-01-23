@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from django.core.management import execute_manager

@@ -4,7 +4,7 @@ see http://linux.die.net/man/8/tc for details about traffic controls in linux.
 
 Example
   try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
   from autotest_lib.client.bin.net.net_tc import *
@@ -42,7 +42,7 @@ except ImportError:
 
 import commands, os, re
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import error

@@ -2,7 +2,7 @@
 
 import logging, os, shutil, sys, time, StringIO
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 

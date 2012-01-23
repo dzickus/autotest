@@ -4,7 +4,7 @@
 
 import unittest, os, socket, time, sys
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.bin import utils

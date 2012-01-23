@@ -11,7 +11,7 @@ __author__ = 'cranger@google.com (Colby Ranger)'
 
 import platform
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import barrier

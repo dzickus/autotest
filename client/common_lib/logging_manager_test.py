@@ -2,7 +2,7 @@
 
 import logging, os, select, StringIO, subprocess, sys, unittest
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import logging_manager, logging_config

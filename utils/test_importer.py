@@ -27,7 +27,7 @@ Most options should be fairly self explanatory, use --help to display them.
 
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import logging, re, os, sys, optparse, compiler

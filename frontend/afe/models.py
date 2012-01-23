@@ -3,7 +3,7 @@ from datetime import datetime
 from django.db import models as dbmodels, connection
 from xml.sax import saxutils
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend.afe import model_logic, model_attributes

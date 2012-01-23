@@ -4,7 +4,7 @@
 import unittest, cStringIO, httplib, time, os
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.mirror import source

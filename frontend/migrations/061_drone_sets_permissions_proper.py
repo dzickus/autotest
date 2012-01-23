@@ -1,6 +1,6 @@
 from django.core import management
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend import settings

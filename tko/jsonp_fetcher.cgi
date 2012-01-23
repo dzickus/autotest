@@ -2,7 +2,7 @@
 
 import cgi, traceback, urllib2
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend.afe.json_rpc import serviceHandler

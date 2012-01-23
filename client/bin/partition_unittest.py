@@ -7,7 +7,7 @@ __author__ = 'gps@google.com (Gregory P. Smith)'
 import os, sys, unittest
 from cStringIO import StringIO
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib.test_utils import mock

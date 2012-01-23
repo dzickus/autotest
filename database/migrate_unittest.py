@@ -2,7 +2,7 @@
 
 import unittest, tempfile, os
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 import MySQLdb

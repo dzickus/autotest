@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import sys, os, textwrap
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import control_data

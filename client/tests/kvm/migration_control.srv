@@ -23,7 +23,7 @@ rootdir = '/tmp/kvm_autotest_root'
 KVM_DIR = os.path.join(AUTOTEST_DIR, 'client/tests/kvm')
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 

@@ -2,7 +2,7 @@
 
 import logging, os, unittest
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import enum, global_config, host_protections

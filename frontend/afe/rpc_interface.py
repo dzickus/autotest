@@ -31,7 +31,7 @@ __author__ = 'showard@google.com (Steve Howard)'
 
 import datetime
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.frontend.afe import models, model_logic, model_attributes

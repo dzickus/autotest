@@ -11,7 +11,7 @@ hosts have overcome whatever issue caused the failure and are useful again.
 import optparse, os, sys
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.server import frontend

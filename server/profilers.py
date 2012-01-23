@@ -1,7 +1,7 @@
 import os, shutil, tempfile, logging
 
 try:
-    import autotest.common
+    import autotest.common as common
 except ImportError:
     import common
 from autotest_lib.client.common_lib import utils, error, profiler_manager
