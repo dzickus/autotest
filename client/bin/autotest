@@ -6,7 +6,7 @@ try:
     import autotest.common as common
 except ImportError:
     import common
-from autotest_lib.client.bin import autotest
+from autotest_lib.client.bin import autotest_bin
 
 if __name__ == '__main__':
-    autotest.main()
+    autotest_bin.main()

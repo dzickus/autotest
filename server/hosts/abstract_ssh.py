@@ -1,6 +1,6 @@
 import os, time, types, socket, shutil, glob, logging, traceback, tempfile
 from autotest_lib.client.common_lib import autotemp, error, logging_manager
-from autotest_lib.server import utils, autotest
+from autotest_lib.server import utils, autotest_bin
 from autotest_lib.server.hosts import remote
 from autotest_lib.client.common_lib.global_config import global_config
 
@@ -552,11 +552,11 @@ class AbstractSSHHost(SiteHost):
     def verify_software(self):
         super(AbstractSSHHost, self).verify_software()
         try:
-            self.check_diskspace(autotest.Autotest.get_install_dir(self),
+            self.check_diskspace(autotest_bin.Autotest.get_install_dir(self),
                                  self.AUTOTEST_GB_DISKSPACE_REQUIRED)
         except error.AutoservHostError:
             raise           # only want to raise if it's a space issue
-        except autotest.AutodirNotFoundError:
+        except autotest_bin.AutodirNotFoundError:
             # autotest dir may not exist, etc. ignore
             logging.debug('autodir space check exception, this is probably '
                           'safe to ignore\n' + traceback.format_exc())

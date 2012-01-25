@@ -31,7 +31,7 @@ except ImportError, e:
         sys.exit(1)
 
 from autotest_lib.server import server_logging_config
-from autotest_lib.server import server_job, utils, autoserv_parser, autotest
+from autotest_lib.server import server_job, utils, autoserv_parser, autotest_bin
 from autotest_lib.client.common_lib import pidfile, logging_manager
 
 def run_autoserv(pid_file_manager, results, parser):
@@ -212,7 +212,7 @@ def main():
     else:
         pid_file_manager = None
 
-    autotest.BaseAutotest.set_install_in_tmpdir(
+    autotest_bin.BaseAutotest.set_install_in_tmpdir(
         parser.options.install_in_tmpdir)
 
     exit_code = 0

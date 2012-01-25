@@ -6,7 +6,7 @@ try:
 except ImportError:
     import common
 from autotest_lib.client.common_lib.test_utils import mock
-from autotest_lib.server import source_kernel, autotest, hosts
+from autotest_lib.server import source_kernel, autotest_bin, hosts
 
 
 class TestSourceKernel(unittest.TestCase):

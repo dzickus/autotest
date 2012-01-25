@@ -5,7 +5,7 @@ try:
 except ImportError:
     import common
 from autotest_lib.client.common_lib import utils, error, profiler_manager
-from autotest_lib.server import profiler, autotest, standalone_profiler, hosts
+from autotest_lib.server import profiler, autotest_bin, standalone_profiler, hosts
 
 
 PROFILER_TMPDIR = '/tmp/profilers'
@@ -91,7 +91,7 @@ class profilers(profiler_manager.profiler_manager):
         for hostname in in_use_hosts - profiler_hosts:
             host = hosts.create_host(hostname, auto_monitor=False)
             tmp_dir = host.get_tmp_dir(parent=PROFILER_TMPDIR)
-            at = autotest.Autotest(host)
+            at = autotest_bin.Autotest(host)
             at.install_no_autoserv(autodir=tmp_dir)
             self.installed_hosts[host.hostname] = (host, at, tmp_dir)
 

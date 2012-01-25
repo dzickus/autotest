@@ -7,7 +7,7 @@ This module defines the SourceKernel class
 """
 
 
-from autotest_lib.server import kernel, autotest
+from autotest_lib.server import kernel, autotest_bin
 
 
 class SourceKernel(kernel.Kernel):
@@ -26,7 +26,7 @@ class SourceKernel(kernel.Kernel):
         self.__kernel = k
         self.__patch_list = []
         self.__config_file = None
-        self.__autotest = autotest.Autotest()
+        self.__autotest = autotest_bin.Autotest()
 
 
     def configure(self, configFile):
